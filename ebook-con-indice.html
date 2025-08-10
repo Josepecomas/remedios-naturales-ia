@@ -1,0 +1,872 @@
+                                   
+
+<html>
+<head>
+<title>El Poder Oculto de las Plantas Medicinales</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* === ESTILO GENERAL EBOOK RESPONSIVE === */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.7;
+  padding: 40px;
+  background: linear-gradient(90deg, #e0f7fa 0%, #b2ebf2 35%, #80deea 100%);
+  color: #003344;
+  margin: 0;
+}
+
+/* CENTRAR TODO EL CONTENIDO */
+body, h1, h2, h3, p {
+  text-align: center;
+}
+
+/* PÁRRAFOS ALINEADOS A LA IZQUIERDA PARA MEJOR LEGIBILIDAD */
+p {
+  text-align: left;
+  max-width: 700px; /* Limita el ancho para facilitar la lectura */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* TÍTULOS PRINCIPALES */
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 1em 0 0.5em 0;
+  background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SUBTÍTULOS */
+h2 {
+  font-size: 2em;
+  margin: 1.5em 0 0.5em 0;
+  color: #006064;
+}
+
+/* TÍTULOS MENORES */
+h3 {
+  font-size: 1.5em;
+  margin: 1em 0 0.5em 0;
+  color: #004d40;
+}
+
+/* PÁRRAFOS */
+p {
+  font-size: 1.1em;
+  margin-bottom: 1.2em;
+  color: #003344;
+}
+
+/* IMÁGENES CENTRADAS Y UNIFICADAS */
+img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* BLOQUES DE RECETAS O DESTACADOS */
+.highlight-box {
+  background-color: #e0f2f1;
+  border-left: 5px solid #00796b;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* === ESTILO PARA LA TABLA DE CONTENIDOS === */
+.tabla-contenidos {
+  background-color: #e0f2f1;
+  border-left: 5px solid #00796b;
+  padding: 20px 30px;
+  margin: 40px auto;
+  max-width: 700px;
+  border-radius: 8px;
+  text-align: left; /* Alineamos el texto a la izquierda para mejor legibilidad */
+}
+
+.tabla-contenidos h2 {
+  text-align: center; /* Centramos solo el título del índice */
+  color: #006064;
+  margin-top: 0;
+}
+
+.tabla-contenidos ul {
+  list-style-type: none; /* Quitamos los puntos de la lista */
+  padding-left: 0;
+}
+
+.tabla-contenidos ul li {
+  margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+  font-size: 1.1em;
+}
+
+.tabla-contenidos a {
+  text-decoration: none;
+  color: #004d40;
+  font-weight: bold;
+}
+
+.tabla-contenidos a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+  color: #00796b;
+}
+
+/* === ESTILO PARA EL DESCARGO DE RESPONSABILIDAD === */
+.disclaimer-box {
+  background-color: #fff3e0; /* Un color de fondo suave, tipo advertencia */
+  border-left: 5px solid #ff9800; /* Un borde naranja */
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 700px;
+  border-radius: 8px;
+}
+.disclaimer-box h3 {
+  color: #e65100;
+  text-align: center;
+  margin-top: 0;
+}
+.disclaimer-box p {
+  text-align: left;
+}
+
+/* === ESTILO PARA EL GENERADOR DE RECETAS CON IA === */
+.gemini-feature-box {
+    background-color: #faf7ff;
+    border-left: 5px solid #6a1b9a;
+    padding: 25px 35px;
+    margin: 40px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.gemini-feature-box h2 {
+    color: #4a148c;
+    text-align: center;
+}
+.gemini-feature-box p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.gemini-feature-box .input-group {
+    margin-bottom: 20px;
+}
+.gemini-feature-box label {
+    font-weight: bold;
+    color: #38006b;
+    display: block;
+    margin-bottom: 8px;
+}
+.gemini-feature-box input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+.gemini-feature-box .checkbox-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+.gemini-feature-box .checkbox-item {
+    display: flex;
+    align-items: center;
+}
+.gemini-feature-box button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #7b1fa2, #4a148c);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.gemini-feature-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(74, 20, 140, 0.3);
+}
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #6a1b9a;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none; /* Oculto por defecto */
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#gemini-result {
+    background-color: #f3e5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    white-space: pre-wrap; /* Mantiene los saltos de línea del texto generado */
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
+}
+
+
+/* RESPONSIVE PARA MÓVILES */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.6em; }
+  h3 { font-size: 1.3em; }
+  p { font-size: 1em; }
+  img { max-width: 100%; }
+}
+
+</style>
+</head>
+<body>
+  <div style="text-align: center;">
+    <img src="https://i.postimg.cc/nrp3Dvyc/Portada-Reducida-1600px-1.png" alt="Portada del eBook">
+  </div>
+
+<h1 id="titulo-principal">📖 <strong>EL PODER OCULTO DE LAS PLANTAS MEDICINALES 🌿</strong></h1>
+<h3 id="-descubre-sus-secretos-y-aprende-a-usarlas-"><strong>Descubre sus Secretos y Aprende a Usarlas</strong></h3>
+<p>📌 <strong>Autor:</strong> J.P.Comas<br>📌 <strong>Año de Publicación:</strong> 2025  </p>
+
+<h2 id="introduccion"><strong>🌱 Introducción: El Regreso a la Medicina Natural</strong></h2>
+<p>Desde tiempos inmemoriales, el ser humano ha recurrido a la naturaleza en busca de sanación. Mucho antes de que existieran los laboratorios modernos, nuestras abuelas ya conocían los secretos de la manzanilla para calmar los nervios, el poder del eucalipto para despejar las vías respiratorias y la magia del aloe vera para curar heridas.  </p>
+<p>Sin embargo, con el paso del tiempo y el auge de la industria farmacéutica, muchas de estas prácticas quedaron en el olvido… hasta ahora. En los últimos años, ha habido un <strong>renacimiento de la medicina natural</strong>, impulsado por un deseo creciente de encontrar alternativas saludables y sostenibles.  </p>
+<p>Y aquí es donde este libro cobra importancia: <strong>vas a descubrir los secretos mejor guardados de las 10 plantas medicinales más utilizadas en el mundo</strong>. No solo aprenderás sobre sus beneficios y propiedades, sino que también conocerás <strong>las mejores recetas</strong> para aprovecharlas en infusiones, ungüentos, aceites y más.  </p>
+<h3 id="-lo-que-aprender-s-en-este-libro-"><strong>🌟 Lo que Aprenderás en Este Libro:</strong></h3>
+<p>✅ <strong>Las propiedades medicinales de 10 plantas esenciales</strong><br>✅ <strong>Cómo usarlas correctamente para aprovechar sus beneficios</strong><br>✅ <strong>Recetas prácticas de infusiones, ungüentos y aceites</strong><br>✅ <strong>Consejos para cultivarlas y conservarlas en casa</strong>  </p>
+<p>La naturaleza nos ha regalado un botiquín completo. <strong>Es hora de abrirlo y aprender a usarlo.</strong> 🌿✨  </p>
+
+<!-- ========= INICIO DE LA TABLA DE CONTENIDOS ========= -->
+<div class="tabla-contenidos">
+    <h2>Índice de Contenidos</h2>
+    <ul>
+        <li><a href="#introduccion">Introducción: El Regreso a la Medicina Natural</a></li>
+        <li><a href="#manzanilla">1. Manzanilla: La Reina de las Infusiones</a></li>
+        <li><a href="#menta">2. Menta: Refrescante y Curativa</a></li>
+        <li><a href="#jengibre">3. Jengibre: La Raíz Milagrosa</a></li>
+        <li><a href="#curcuma">4. Cúrcuma: El Oro de la Naturaleza</a></li>
+        <li><a href="#lavanda">5. Lavanda: La Flor de la Calma</a></li>
+        <li><a href="#eucalipto">6. Eucalipto: El Guardián de las Vías Respiratorias</a></li>
+        <li><a href="#romero">7. Romero: Energía y Vitalidad</a></li>
+        <li><a href="#aloe">8. Aloe Vera: La Planta Milagrosa de la Piel</a></li>
+        <li><a href="#valeriana">9. Valeriana: El Secreto para un Sueño Profundo</a></li>
+        <li><a href="#oregano">10. Orégano: Mucho Más que un Condimento</a></li>
+        <li><a href="#combinaciones">Combinaciones de Plantas para Remedios Naturales</a></li>
+        <li><a href="#conservacion">Capítulo Final: Cómo Secar y Conservar las Plantas</a></li>
+        <li><a href="#faq">Preguntas Frecuentes</a></li>
+    </ul>
+</div>
+<!-- ========= FIN DE LA TABLA DE CONTENIDOS ========= -->
+
+<!-- ========= INICIO DEL GENERADOR DE RECETAS CON IA ========= -->
+<div class="gemini-feature-box">
+    <h2>Generador de Remedios con IA ✨</h2>
+    <p>Describe tu malestar y selecciona las plantas que tienes. La IA creará un remedio personalizado para ti.</p>
+    
+    <div class="input-group">
+        <label for="symptom-input">1. ¿Qué quieres aliviar? (Ej: dolor de cabeza, estrés, mala digestión)</label>
+        <input type="text" id="symptom-input" placeholder="Escribe aquí tu síntoma o malestar...">
+    </div>
+
+    <div class="input-group">
+        <label>2. ¿Qué plantas tienes disponibles?</label>
+        <div class="checkbox-container" id="plants-checkboxes">
+            <!-- Los checkboxes se generarán con JS -->
+        </div>
+    </div>
+
+    <button id="generate-remedy-btn">Crear mi Remedio con IA ✨</button>
+
+    <div class="loader" id="loader"></div>
+    <div id="gemini-result"></div>
+</div>
+<!-- ========= FIN DEL GENERADOR DE RECETAS CON IA ========= -->
+
+
+<h2 id="manzanilla"><strong>1️⃣ Manzanilla 🌼: La Reina de las Infusiones</strong></h2>
+<img src="https://i.postimg.cc/xCT3jKP7/Manzanilla-3.jpg" alt="Manzanilla">
+<h2>🌼 Manzanilla: La Reina de las Infusiones</h2>
+<p>Calmante, digestiva y reconfortante. Ideal para aliviar el estrés, dolores menstruales y molestias digestivas.</p>
+<p>La manzanilla es, sin duda, una de las plantas medicinales más queridas y utilizadas en el mundo. Su aroma suave y sus propiedades relajantes la convierten en un remedio natural indispensable en cualquier hogar.  </p>
+<h3 id="-propiedades-medicinales-"><strong>🔬 Propiedades Medicinales</strong></h3>
+<p>🌿 <strong>Calmante natural:</strong> Ideal para el estrés y la ansiedad.<br>🌿 <strong>Digestiva:</strong> Alivia problemas estomacales y cólicos.<br>🌿 <strong>Antiinflamatoria:</strong> Ayuda en casos de irritación o inflamación.<br>🌿 <strong>Mejora el sueño:</strong> Excelente aliada contra el insomnio.  </p>
+<h3 id="-beneficios-para-la-salud-"><strong>💡 Beneficios para la Salud</strong></h3>
+<p>📌 <strong>Reduce la ansiedad y el estrés</strong>: Su efecto relajante actúa sobre el sistema nervioso.<br>📌 <strong>Favorece la digestión</strong>: Alivia el malestar estomacal y los cólicos.<br>📌 <strong>Ayuda a conciliar el sueño</strong>: Tomar una infusión antes de dormir mejora la calidad del sueño.<br>📌 <strong>Alivia irritaciones de la piel</strong>: Se usa en compresas para tratar heridas o piel inflamada.  </p>
+<h3 id="-receta-infusi-n-relajante-de-manzanilla-"><strong>🍵 Receta: Infusión Relajante de Manzanilla</strong></h3>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 1 cucharadita de flores secas de manzanilla<br>✅ 1 taza de agua caliente<br>✅ Miel o limón (opcional)  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Hierve el agua y agrégale la manzanilla.  </li>
+<li>Deja reposar por 5 minutos.  </li>
+<li>Cuela y endulza con miel o unas gotas de limón.  </li>
+<li>¡Disfruta de un momento de paz! 🌼✨  </li>
+</ol>
+<h3 id="-receta-ba-o-relajante-con-manzanilla-"><strong>🛀 Receta: Baño Relajante con Manzanilla</strong></h3>
+<p>📌 <strong>Ideal para calmar el estrés y relajar los músculos.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 1 taza de flores de manzanilla secas<br>✅ Agua caliente para la tina  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Hierve la manzanilla en 2 litros de agua durante 10 minutos.  </li>
+<li>Cuela la infusión y agrégala al agua de la tina.  </li>
+<li>Sumérgete por 20 minutos y disfruta la relajación.  </li>
+</ol>
+<p>💡 <strong>Consejo Extra:</strong> Si no tienes tina, empapa una toalla con la infusión y colócala sobre la piel para un efecto calmante.  </p>
+
+<h2 id="menta"><strong>2️⃣ Menta 🌿: Refrescante y Curativa</strong></h2>
+<img src="https://i.postimg.cc/wM15LgZQ/Menta-1.jpg" alt="Menta">
+<h2>🌿 Menta: Refrescante y Curativa</h2>
+<p>Estimula la digestión, alivia la congestión nasal y refresca el aliento. Un clásico del botiquín natural.</p>
+<p>La menta no solo es una hierba aromática popular en la cocina, sino que también tiene poderosos beneficios medicinales. Desde aliviar problemas digestivos hasta despejar las vías respiratorias, esta planta es un verdadero tesoro verde.  </p>
+<h3 id="-propiedades-medicinales-1"><strong>🔬 Propiedades Medicinales</strong></h3>
+<p>🌿 <strong>Digestiva:</strong> Alivia el malestar estomacal y la indigestión.<br>🌿 <strong>Refrescante:</strong> Combate el mal aliento y refresca la boca.<br>🌿 <strong>Descongestionante:</strong> Ayuda a despejar las vías respiratorias.<br>🌿 <strong>Relajante muscular:</strong> Reduce dolores y tensiones.  </p>
+<h3 id="-beneficios-para-la-salud-1"><strong>💡 Beneficios para la Salud</strong></h3>
+<p>📌 <strong>Alivia problemas estomacales:</strong> Ideal para digestiones pesadas.<br>📌 <strong>Elimina el mal aliento:</strong> Su aceite es un potente antibacteriano.<br>📌 <strong>Despeja la nariz y los pulmones:</strong> Perfecta para gripes y resfriados.<br>📌 <strong>Ayuda a relajar los músculos:</strong> Ideal en masajes y ungüentos.  </p>
+<h3 id="-receta-t-digestivo-de-menta-"><strong>🍵 Receta: Té Digestivo de Menta</strong></h3>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 1 cucharadita de hojas de menta secas o frescas<br>✅ 1 taza de agua caliente<br>✅ Miel o limón (opcional)  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Hierve el agua y agrégale las hojas de menta.  </li>
+<li>Deja reposar por 5 minutos.  </li>
+<li>Cuela y endulza si lo deseas.  </li>
+<li>¡Listo para disfrutar! 🌿✨  </li>
+</ol>
+<h3 id="-receta-ung-ento-para-dolores-musculares-"><strong>🧴 Receta: Ungüento para Dolores Musculares</strong></h3>
+<p>📌 <strong>Ideal para aliviar dolores musculares y de cabeza.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 10 gotas de aceite esencial de menta<br>✅ 2 cucharadas de aceite de coco o almendras<br>✅ 1 cucharada de cera de abeja (opcional)  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Derrite la cera de abeja (si usas).  </li>
+<li>Mezcla con el aceite de coco y agrega el aceite esencial de menta.  </li>
+<li>Guarda en un frasco pequeño y usa en masajes relajantes.  </li>
+</ol>
+<p>💡 <strong>Consejo Extra:</strong> Aplica en las sienes para aliviar dolores de cabeza.  </p>
+
+<h2 id="jengibre"><strong>3️⃣ Jengibre 🫚: La Raíz Milagrosa</strong></h2>
+<img src="https://i.postimg.cc/qR5ykWqh/Genjibre-3.jpg" alt="Jengibre">
+<h2>🫚 Jengibre: La Raíz Milagrosa</h2>
+<p>Antiinflamatorio natural que mejora la circulación, alivia las náuseas y fortalece el sistema inmune.</p>
+<p>El jengibre es una de las raíces más poderosas de la naturaleza. Conocida desde hace miles de años en la medicina tradicional china e india, esta planta se ha convertido en un remedio infalible para tratar inflamaciones, mejorar la digestión y reforzar el sistema inmunológico.  </p>
+<h3 id="-propiedades-medicinales-2"><strong>🔬 Propiedades Medicinales</strong></h3>
+<p>🌿 <strong>Antiinflamatorio:</strong> Alivia dolores articulares y musculares.<br>🌿 <strong>Digestivo:</strong> Reduce náuseas, gases e indigestión.<br>🌿 <strong>Refuerza el sistema inmunológico:</strong> Previene resfriados y gripes.<br>🌿 <strong>Mejora la circulación:</strong> Ideal para personas con mala circulación sanguínea.  </p>
+<h3 id="-beneficios-para-la-salud-2"><strong>💡 Beneficios para la Salud</strong></h3>
+<p>📌 <strong>Alivia el dolor de garganta y la tos</strong>: Actúa como un antibiótico natural.<br>📌 <strong>Mejora la digestión</strong>: Reduce los síntomas del reflujo gástrico.<br>📌 <strong>Combate el mareo y las náuseas</strong>: Perfecto para viajes largos o embarazo.<br>📌 <strong>Regula los niveles de azúcar en sangre</strong>: Beneficioso para diabéticos.  </p>
+<h3 id="-receta-infusi-n-de-jengibre-y-lim-n-para-el-resfriado-"><strong>🍵 Receta: Infusión de Jengibre y Limón para el Resfriado</strong></h3>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 1 trozo de jengibre fresco (aprox. 2 cm)<br>✅ 1 taza de agua caliente<br>✅ Jugo de medio limón<br>✅ 1 cucharadita de miel  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Corta el jengibre en rodajas finas.  </li>
+<li>Hierve el agua y agrégale el jengibre.  </li>
+<li>Deja reposar por 10 minutos.  </li>
+<li>Añade el jugo de limón y miel.  </li>
+<li><strong>Tómalo caliente para aliviar la congestión.</strong>  </li>
+</ol>
+<h3 id="-receta-aceite-de-jengibre-para-dolores-musculares-"><strong>🧴 Receta: Aceite de Jengibre para Dolores Musculares</strong></h3>
+<p>📌 <strong>Ideal para masajes en articulaciones inflamadas o músculos adoloridos.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 3 cucharadas de jengibre rallado<br>✅ 1/2 taza de aceite de oliva o de coco<br>✅ Un frasco de vidrio  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Calienta el aceite a fuego bajo y añade el jengibre rallado.  </li>
+<li>Deja que se caliente por 10 minutos sin que hierva.  </li>
+<li>Cuela el aceite y guárdalo en un frasco.  </li>
+<li><strong>Úsalo para masajes en áreas con dolor o inflamación.</strong>  </li>
+</ol>
+<h3 id="-c-mo-cultivar-jengibre-en-casa-"><strong>🌱 Cómo Cultivar Jengibre en Casa</strong></h3>
+<p>🔹 <strong>Tipo de suelo:</strong> Fértil y bien drenado.<br>🔹 <strong>Luz solar:</strong> Semisombra o luz indirecta.<br>🔹 <strong>Riego:</strong> Moderado, sin encharcar.  </p>
+<p>📌 <strong>Instrucciones:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Usa un trozo de jengibre con brotes.  </li>
+<li>Plántalo en una maceta con tierra suelta y húmeda.  </li>
+<li>Coloca la maceta en un lugar cálido y con luz indirecta.  </li>
+<li><strong>Después de 8-10 meses</strong>, podrás cosechar tu jengibre casero. 🌿✨  </li>
+</ol>
+<hr>
+
+<h2 id="curcuma"><strong>4️⃣ Cúrcuma ✨: El Oro de la Naturaleza</strong></h2>
+<img src="https://i.postimg.cc/xqrmmHK9/Curcuma-2.jpg" alt="Cúrcuma">
+<h2>✨ Cúrcuma: El Oro de la Naturaleza</h2>
+<p>Poderoso antioxidante y antiinflamatorio. Se usa para el dolor articular, la digestión y la salud hepática.</p>
+<p>La cúrcuma es <strong>una de las especias más estudiadas por la ciencia</strong> debido a sus potentes propiedades antiinflamatorias. Su ingrediente activo, la <strong>curcumina</strong>, es un antioxidante natural que ayuda a combatir enfermedades crónicas.  </p>
+<h3 id="-propiedades-medicinales-3"><strong>🔬 Propiedades Medicinales</strong></h3>
+<p>🌿 <strong>Antiinflamatorio natural</strong>: Reduce el dolor y la hinchazón.<br>🌿 <strong>Poderoso antioxidante</strong>: Protege las células del daño.<br>🌿 <strong>Fortalece el sistema inmunológico</strong>: Ideal para prevenir enfermedades.<br>🌿 <strong>Mejora la digestión</strong>: Reduce la acidez y la inflamación estomacal.  </p>
+<h3 id="-beneficios-para-la-salud-3"><strong>💡 Beneficios para la Salud</strong></h3>
+<p>📌 <strong>Reduce el riesgo de enfermedades cardíacas</strong>: Ayuda a mejorar la circulación.<br>📌 <strong>Protege el cerebro</strong>: Puede prevenir el Alzheimer y mejorar la memoria.<br>📌 <strong>Alivia la artritis y dolores crónicos</strong>: Gracias a sus efectos antiinflamatorios.<br>📌 <strong>Mejora la piel</strong>: Ayuda a tratar el acné y la psoriasis.  </p>
+<h3 id="-receta-leche-dorada-con-c-rcuma-"><strong>🥛 Receta: Leche Dorada con Cúrcuma</strong></h3>
+<p>📌 <strong>Bebida antiinflamatoria ideal para las noches.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 1 taza de leche (puede ser vegetal)<br>✅ 1 cucharadita de cúrcuma en polvo<br>✅ 1/2 cucharadita de canela en polvo<br>✅ 1 cucharadita de miel<br>✅ 1 pizca de pimienta negra (activa la curcumina)  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Calienta la leche sin que hierva.  </li>
+<li>Añade la cúrcuma, canela y pimienta negra.  </li>
+<li>Mezcla bien y endulza con miel.  </li>
+<li><strong>Disfruta caliente antes de dormir.</strong>  </li>
+</ol>
+<h3 id="-receta-mascarilla-de-c-rcuma-para-una-piel-radiante-"><strong>🛀 Receta: Mascarilla de Cúrcuma para una Piel Radiante</strong></h3>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 1 cucharadita de cúrcuma en polvo<br>✅ 2 cucharadas de yogur natural<br>✅ 1 cucharadita de miel  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Mezcla todos los ingredientes hasta formar una pasta.  </li>
+<li>Aplica sobre el rostro y deja actuar 10 minutos.  </li>
+<li>Enjuaga con agua tibia.  </li>
+<li><strong>Repite 2 veces por semana para una piel luminosa.</strong>  </li>
+</ol>
+<h3 id="-c-mo-cultivar-c-rcuma-en-casa-"><strong>🌱 Cómo Cultivar Cúrcuma en Casa</strong></h3>
+<p>🔹 <strong>Tipo de suelo:</strong> Suelto y húmedo.<br>🔹 <strong>Luz solar:</strong> Semisombra o luz indirecta.<br>🔹 <strong>Riego:</strong> Moderado.  </p>
+<p>📌 <strong>Instrucciones:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Usa un trozo de cúrcuma con brotes.  </li>
+<li>Plántalo en una maceta con tierra húmeda y bien drenada.  </li>
+<li>Riégalo cada 2-3 días.  </li>
+<li><strong>Después de 8-10 meses, podrás cosechar tu propia cúrcuma.</strong>  </li>
+</ol>
+
+<h2 id="lavanda"><strong>5️⃣ Lavanda 💜: La Flor de la Calma</strong></h2>
+<img src="https://i.postimg.cc/1R7JtY2K/Lavanda-2.jpg" alt="Lavanda">
+<h2>💜 Lavanda: La Flor de la Calma</h2>
+<p>Relajante, ayuda a conciliar el sueño, calma la ansiedad y mejora el estado de ánimo. También cuida la piel.</p>
+<p>La lavanda es <strong>sinónimo de relajación y bienestar</strong>. Su fragancia inconfundible ha sido utilizada durante siglos en aromaterapia, y su aceite esencial es uno de los más poderosos para calmar la mente y el cuerpo.  </p>
+<h3 id="-propiedades-medicinales-4"><strong>🔬 Propiedades Medicinales</strong></h3>
+<p>🌿 <strong>Relajante y ansiolítica:</strong> Reduce el estrés y la ansiedad.<br>🌿 <strong>Inductora del sueño:</strong> Ayuda a conciliar el sueño de forma natural.<br>🌿 <strong>Antiséptica y cicatrizante:</strong> Cura heridas leves y quemaduras.<br>🌿 <strong>Alivia dolores de cabeza:</strong> Excelente para masajes en las sienes.  </p>
+<h3 id="-beneficios-para-la-salud-4"><strong>💡 Beneficios para la Salud</strong></h3>
+<p>📌 <strong>Mejora la calidad del sueño</strong>: Un aroma natural para combatir el insomnio.<br>📌 <strong>Reduce el estrés y la ansiedad</strong>: Su aceite esencial es un excelente relajante.<br>📌 <strong>Cura pequeñas heridas y quemaduras</strong>: Sus propiedades antisépticas aceleran la cicatrización.<br>📌 <strong>Alivia dolores musculares y de cabeza</strong>: Ideal en masajes y baños relajantes.  </p>
+<h3 id="-receta-ba-o-relajante-con-lavanda-"><strong>🛀 Receta: Baño Relajante con Lavanda</strong></h3>
+<p>📌 <strong>Ideal para reducir el estrés y mejorar el sueño.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 1 taza de flores de lavanda secas<br>✅ 2 litros de agua caliente<br>✅ 10 gotas de aceite esencial de lavanda (opcional)  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Hierve el agua y añade las flores de lavanda.  </li>
+<li>Deja reposar por 15 minutos y cuela.  </li>
+<li>Vierte la infusión en el agua del baño.  </li>
+<li><strong>Sumérgete durante 20 minutos y disfruta de la relajación.</strong>  </li>
+</ol>
+<h3 id="-receta-aceite-de-lavanda-para-masajes-"><strong>🕯️ Receta: Aceite de Lavanda para Masajes</strong></h3>
+<p>📌 <strong>Perfecto para aliviar la ansiedad y relajar los músculos.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 10 gotas de aceite esencial de lavanda<br>✅ 2 cucharadas de aceite de almendras o coco<br>✅ Un frasco pequeño de vidrio  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Mezcla el aceite esencial con el aceite base.  </li>
+<li>Guárdalo en un frasco oscuro.  </li>
+<li><strong>Úsalo en masajes relajantes o antes de dormir.</strong>  </li>
+</ol>
+<h3 id="-c-mo-cultivar-lavanda-en-casa-"><strong>🌱 Cómo Cultivar Lavanda en Casa</strong></h3>
+<p>🔹 <strong>Tipo de suelo:</strong> Ligero y bien drenado.<br>🔹 <strong>Luz solar:</strong> Pleno sol.<br>🔹 <strong>Riego:</strong> Moderado, evitando encharcar la tierra.  </p>
+<p>📌 <strong>Instrucciones:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Planta las semillas o esquejes en primavera.  </li>
+<li>Riégala cada 2-3 días hasta que crezca, luego reduce la frecuencia.  </li>
+<li><strong>Cosecha las flores cuando estén completamente abiertas y sécalas boca abajo.</strong>  </li>
+</ol>
+
+<h2 id="eucalipto"><strong>6️⃣ Eucalipto 🌬️: El Guardián de las Vías Respiratorias</strong></h2>
+<img src="https://i.postimg.cc/156Cjr7c/Eucalipto-2.jpg" alt="Eucalipto">
+<h2>🌬️ Eucalipto: Guardián de las Vías Respiratorias</h2>
+<p>Descongestionante, alivia la tos y el resfriado. Ideal para vapores, infusiones y aceites esenciales.</p>
+<p>El eucalipto es <strong>uno de los remedios naturales más efectivos para tratar problemas respiratorios</strong>. Su aroma penetrante despeja las vías respiratorias, combate la tos y ayuda a descongestionar los pulmones.  </p>
+<h3 id="-propiedades-medicinales-5"><strong>🔬 Propiedades Medicinales</strong></h3>
+<p>🌿 <strong>Descongestionante:</strong> Alivia resfriados y congestión nasal.<br>🌿 <strong>Antibacteriano:</strong> Combate infecciones respiratorias.<br>🌿 <strong>Expectorante:</strong> Ayuda a expulsar la mucosidad.<br>🌿 <strong>Relajante muscular:</strong> Ideal en baños y masajes.  </p>
+<h3 id="-beneficios-para-la-salud-5"><strong>💡 Beneficios para la Salud</strong></h3>
+<p>📌 <strong>Alivia la congestión nasal</strong>: Perfecto para resfriados y sinusitis.<br>📌 <strong>Combate la tos y el asma</strong>: Desinflama los bronquios.<br>📌 <strong>Purifica el aire</strong>: Ideal para limpiar ambientes cerrados.<br>📌 <strong>Relaja los músculos</strong>: Se usa en baños de vapor y aceites esenciales.  </p>
+<h3 id="-receta-vapor-de-eucalipto-para-la-congesti-n-"><strong>🌬️ Receta: Vapor de Eucalipto para la Congestión</strong></h3>
+<p>📌 <strong>Alivia la nariz tapada y despeja los pulmones.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 1 puñado de hojas de eucalipto<br>✅ 1 litro de agua caliente<br>✅ Una toalla grande  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Hierve el agua y agrégale las hojas de eucalipto.  </li>
+<li>Retira del fuego y coloca tu rostro cerca del vapor.  </li>
+<li>Cubre tu cabeza con la toalla e inhala profundamente durante 10 minutos.  </li>
+</ol>
+<h3 id="-receta-ung-ento-de-eucalipto-para-la-tos-"><strong>🧴 Receta: Ungüento de Eucalipto para la Tos</strong></h3>
+<p>📌 <strong>Excelente para aliviar la tos nocturna y despejar los bronquios.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 10 gotas de aceite esencial de eucalipto<br>✅ 2 cucharadas de aceite de coco<br>✅ 1 cucharada de cera de abeja (opcional)  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Derrite la cera de abeja (si usas).  </li>
+<li>Mezcla con el aceite de coco y añade el aceite esencial.  </li>
+<li>Guarda en un frasco y aplícalo en el pecho antes de dormir.  </li>
+</ol>
+<h3 id="-c-mo-cultivar-eucalipto-en-casa-"><strong>🌱 Cómo Cultivar Eucalipto en Casa</strong></h3>
+<p>🔹 <strong>Tipo de suelo:</strong> Bien drenado y rico en nutrientes.<br>🔹 <strong>Luz solar:</strong> Pleno sol.<br>🔹 <strong>Riego:</strong> Moderado.  </p>
+<p>📌 <strong>Instrucciones:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Planta semillas o esquejes en una maceta grande.  </li>
+<li>Riégalo regularmente hasta que crezca, luego reduce la frecuencia.  </li>
+<li><strong>Podrás cosechar sus hojas cuando la planta tenga unos meses de vida.</strong>  </li>
+</ol>
+
+<h2 id="romero"><strong>7️⃣ Romero 🌱: Energía y Vitalidad en una Hierba</strong></h2>
+<img src="https://i.postimg.cc/SNCrQNhW/Romero-1.jpg" alt="Romero">
+<h2>🌱 Romero: Hierba Versátil y Energizante</h2>
+<p>Mejora la memoria, estimula la circulación y combate la fatiga. También se usa para fortalecer el cabello.</p>
+<p>El romero es <strong>una de las hierbas más versátiles</strong>, utilizada tanto en la cocina como en la medicina natural. Su aroma intenso esconde una gran cantidad de beneficios para la salud, especialmente para la <strong>memoria, la circulación y el sistema inmunológico</strong>.  </p>
+<h3 id="-propiedades-medicinales-6"><strong>🔬 Propiedades Medicinales</strong></h3>
+<p>🌿 <strong>Estimulante mental:</strong> Mejora la memoria y concentración.<br>🌿 <strong>Circulatorio:</strong> Activa la circulación y alivia piernas cansadas.<br>🌿 <strong>Digestivo:</strong> Ayuda a aliviar gases e indigestión.<br>🌿 <strong>Fortalece el sistema inmune:</strong> Combate infecciones y refuerza las defensas.  </p>
+<h3 id="-beneficios-para-la-salud-6"><strong>💡 Beneficios para la Salud</strong></h3>
+<p>📌 <strong>Mejora la concentración y la memoria</strong>: Ideal para estudiantes o personas con alto estrés mental.<br>📌 <strong>Ayuda a aliviar dolores musculares</strong>: Su aceite es excelente para masajes terapéuticos.<br>📌 <strong>Fortalece el cabello</strong>: Su uso en tónicos capilares estimula el crecimiento.<br>📌 <strong>Alivia problemas digestivos</strong>: Reduce gases y pesadez estomacal.  </p>
+<h3 id="-receta-infusi-n-de-romero-para-la-memoria-y-energ-a-"><strong>☕ Receta: Infusión de Romero para la Memoria y Energía</strong></h3>
+<p>📌 <strong>Perfecta para aumentar la concentración y combatir el cansancio mental.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 1 cucharadita de hojas secas de romero<br>✅ 1 taza de agua caliente<br>✅ Miel o limón (opcional)  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Hierve el agua y agrégale las hojas de romero.  </li>
+<li>Deja reposar por 5 minutos y cuela.  </li>
+<li>Endulza con miel si lo deseas y disfruta caliente.  </li>
+</ol>
+<p>💡 <strong>Combinación Especial:</strong> Puedes mezclar <strong>romero + menta</strong> para potenciar su efecto energizante.  </p>
+<h3 id="-receta-aceite-de-romero-para-el-crecimiento-del-cabello-"><strong>🧴 Receta: Aceite de Romero para el Crecimiento del Cabello</strong></h3>
+<p>📌 <strong>Estimula el crecimiento capilar y fortalece el cuero cabelludo.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 5 ramas de romero fresco<br>✅ 1/2 taza de aceite de oliva o coco<br>✅ Un frasco de vidrio  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Calienta el aceite a fuego bajo y añade el romero.  </li>
+<li>Cocina por 10 minutos sin hervir y retira del fuego.  </li>
+<li>Cuela y almacena en un frasco oscuro.  </li>
+<li><strong>Masajea el cuero cabelludo con este aceite 2-3 veces por semana.</strong>  </li>
+</ol>
+<h3 id="-c-mo-cultivar-romero-en-casa-"><strong>🌱 Cómo Cultivar Romero en Casa</strong></h3>
+<p>🔹 <strong>Tipo de suelo:</strong> Ligero y bien drenado.<br>🔹 <strong>Luz solar:</strong> Pleno sol.<br>🔹 <strong>Riego:</strong> Poco frecuente; tolera sequía.  </p>
+<p>📌 <strong>Instrucciones:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Planta esquejes de romero en una maceta con tierra arenosa.  </li>
+<li>Riégalo solo cuando la tierra esté completamente seca.  </li>
+<li><strong>Podrás cosechar sus hojas en cualquier época del año.</strong>  </li>
+</ol>
+
+<h2 id="aloe"><strong>8️⃣ Aloe Vera 🍃: La Planta Milagrosa de la Piel</strong></h2>
+<img src="https://i.postimg.cc/jC0Lkb3T/Aloe-Vera-1.jpg" alt="Aloe Vera">
+<h2>🍃 Aloe Vera: Milagro para la Piel</h2>
+<p>Regenera la piel, calma quemaduras, hidrata y cicatriza. También ayuda a la digestión y a la salud intestinal.</p>
+<p>El aloe vera es <strong>uno de los remedios naturales más populares del mundo</strong>. Su gel interno tiene propiedades <strong>hidratantes, cicatrizantes y digestivas</strong>, lo que lo convierte en un ingrediente esencial para el cuidado de la piel y el sistema digestivo.  </p>
+<h3 id="-propiedades-medicinales-7"><strong>🔬 Propiedades Medicinales</strong></h3>
+<p>🌿 <strong>Regenerador de la piel:</strong> Cura quemaduras, heridas y cicatrices.<br>🌿 <strong>Digestivo:</strong> Alivia el estreñimiento y problemas gástricos.<br>🌿 <strong>Antiinflamatorio:</strong> Reduce irritaciones cutáneas.<br>🌿 <strong>Hidratante profundo:</strong> Nutre la piel y el cabello.  </p>
+<h3 id="-beneficios-para-la-salud-7"><strong>💡 Beneficios para la Salud</strong></h3>
+<p>📌 <strong>Alivia quemaduras y heridas</strong>: Su gel acelera la regeneración celular.<br>📌 <strong>Mejora problemas de acné y piel seca</strong>: Hidratación profunda.<br>📌 <strong>Ayuda a tratar la gastritis y el reflujo</strong>: Protege la mucosa estomacal.<br>📌 <strong>Fortalece el cabello y combate la caspa</strong>: Se usa como mascarilla capilar.  </p>
+<h3 id="-receta-jugo-de-aloe-vera-para-el-est-mago-"><strong>🥤 Receta: Jugo de Aloe Vera para el Estómago</strong></h3>
+<p>📌 <strong>Alivia la acidez, el reflujo y mejora la digestión.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 1 hoja de aloe vera<br>✅ 1 vaso de agua o jugo de naranja<br>✅ 1 cucharada de miel  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Corta una hoja de aloe y extrae el gel interno (retira la parte amarilla).  </li>
+<li>Licúa el gel con agua o jugo.  </li>
+<li>Endulza con miel y bebe en ayunas.  </li>
+</ol>
+<p>💡 <strong>Combinación Especial:</strong> Mezcla <strong>aloe vera + jengibre</strong> para potenciar sus efectos digestivos.  </p>
+<h3 id="-receta-gel-de-aloe-vera-para-quemaduras-y-piel-irritada-"><strong>🧴 Receta: Gel de Aloe Vera para Quemaduras y Piel Irritada</strong></h3>
+<p>📌 <strong>Ideal para después de la exposición al sol.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 1 hoja de aloe vera<br>✅ 5 gotas de aceite esencial de lavanda  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Extrae el gel de aloe y mézclalo con el aceite esencial.  </li>
+<li>Almacénalo en un frasco limpio.  </li>
+<li><strong>Aplícalo sobre la piel cuando necesites hidratación o alivio.</strong>  </li>
+</ol>
+<h3 id="-c-mo-cultivar-aloe-vera-en-casa-"><strong>🌱 Cómo Cultivar Aloe Vera en Casa</strong></h3>
+<p>🔹 <strong>Tipo de suelo:</strong> Arenoso y seco.<br>🔹 <strong>Luz solar:</strong> Pleno sol o semisombra.<br>🔹 <strong>Riego:</strong> Muy poco; solo cuando la tierra esté seca.  </p>
+<p>📌 <strong>Instrucciones:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Planta una hoja o hijuelo en una maceta con tierra seca.  </li>
+<li>Riégalo cada 10-15 días.  </li>
+<li><strong>Cuando la planta esté madura, corta sus hojas para extraer el gel.</strong>    </li>
+</ol>
+
+<h2 id="valeriana"><strong>9️⃣ Valeriana 😴: El Secreto para un Sueño Profundo</strong></h2>
+<img src="https://i.postimg.cc/CMZ7tsrr/Valeriana-1.jpg" alt="Valeriana">
+<h2>😴 Valeriana: Secreto para un Sueño Profundo</h2>
+<p>Tranquilizante natural que combate el insomnio y la ansiedad. Perfecta para relajarse antes de dormir.</p>
+<p>La valeriana es <strong>uno de los remedios naturales más efectivos para combatir el insomnio y la ansiedad</strong>. Sus compuestos actúan sobre el sistema nervioso, ayudando a relajar el cuerpo y la mente.  </p>
+<h3 id="-propiedades-medicinales-8"><strong>🔬 Propiedades Medicinales</strong></h3>
+<p>🌿 <strong>Sedante natural:</strong> Induce el sueño sin efectos secundarios.<br>🌿 <strong>Ansiolítica:</strong> Reduce el estrés y la ansiedad.<br>🌿 <strong>Relajante muscular:</strong> Ideal para aliviar calambres y tensión.<br>🌿 <strong>Regulador nervioso:</strong> Calma el sistema nervioso en momentos de crisis.  </p>
+<h3 id="-beneficios-para-la-salud-8"><strong>💡 Beneficios para la Salud</strong></h3>
+<p>📌 <strong>Ayuda a dormir profundamente</strong>: Especialmente útil para insomnio crónico.<br>📌 <strong>Reduce la ansiedad y el estrés</strong>: Actúa como un calmante natural.<br>📌 <strong>Relaja los músculos y alivia dolores</strong>: Ideal para personas con tensión muscular.<br>📌 <strong>Mejora la concentración y el estado de ánimo</strong>: Disminuye la irritabilidad.  </p>
+<h3 id="-receta-infusi-n-de-valeriana-para-dormir-mejor-"><strong>☕ Receta: Infusión de Valeriana para Dormir Mejor</strong></h3>
+<p>📌 <strong>Perfecta para relajarse antes de acostarse.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 1 cucharadita de raíz de valeriana seca<br>✅ 1 taza de agua caliente<br>✅ Miel o limón (opcional)  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Hierve el agua y agrégale la raíz de valeriana.  </li>
+<li>Deja reposar por 10 minutos y cuela.  </li>
+<li><strong>Bebe media hora antes de dormir.</strong>  </li>
+</ol>
+<p>💡 <strong>Combinación Especial:</strong> Mezcla <strong>valeriana + lavanda + manzanilla</strong> para una infusión súper relajante.  </p>
+<h3 id="-c-mo-cultivar-valeriana-en-casa-"><strong>🌱 Cómo Cultivar Valeriana en Casa</strong></h3>
+<p>🔹 <strong>Tipo de suelo:</strong> Húmedo y bien abonado.<br>🔹 <strong>Luz solar:</strong> Semisombra.<br>🔹 <strong>Riego:</strong> Frecuente; necesita humedad constante.  </p>
+<p>📌 <strong>Instrucciones:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Planta semillas de valeriana en primavera.  </li>
+<li>Riégala regularmente, sin encharcar.  </li>
+<li><strong>Después de un año, cosecha sus raíces y sécalas para hacer infusiones.</strong>  </li>
+</ol>
+<h3 id="-contraindicaciones-de-la-valeriana-"><strong>⚠️ Contraindicaciones de la Valeriana</strong></h3>
+<p>❌ <strong>No combinar con alcohol o sedantes</strong>: Puede potenciar sus efectos.<br>❌ <strong>No usar en el embarazo o lactancia</strong>: Puede alterar el sistema nervioso del bebé.<br>❌ <strong>Evitar si se toman antidepresivos</strong>: Puede interactuar con ciertos medicamentos.  </p>
+
+<h2 id="oregano"><strong>🔟 Orégano 🍕: Mucho Más que un Condimento</strong></h2>
+<img src="https://i.postimg.cc/h4HsqQHD/Oregano-1.jpg" alt="Orégano">
+<h2>🍕 Orégano: Mucho Más que un Condimento</h2>
+<p>Antibiótico natural, ideal para problemas respiratorios e infecciones. Rico en antioxidantes y aceites esenciales.</p>
+<p>El orégano no solo es un delicioso condimento, sino que también es <strong>un potente antibiótico natural</strong>. Sus propiedades lo convierten en un aliado para el sistema respiratorio, digestivo e inmunológico.  </p>
+<h3 id="-propiedades-medicinales-9"><strong>🔬 Propiedades Medicinales</strong></h3>
+<p>🌿 <strong>Antibacteriano y antifúngico:</strong> Ayuda a combatir infecciones.<br>🌿 <strong>Digestivo:</strong> Alivia problemas estomacales y gases.<br>🌿 <strong>Expectorante:</strong> Limpia las vías respiratorias.<br>🌿 <strong>Antiinflamatorio:</strong> Reduce dolores musculares y articulares.  </p>
+<h3 id="-beneficios-para-la-salud-9"><strong>💡 Beneficios para la Salud</strong></h3>
+<p>📌 <strong>Refuerza el sistema inmunológico</strong>: Protege contra virus y bacterias.<br>📌 <strong>Alivia resfriados y tos</strong>: Descongestiona los pulmones.<br>📌 <strong>Mejora la digestión</strong>: Ayuda en casos de hinchazón o indigestión.<br>📌 <strong>Elimina hongos y bacterias</strong>: Se usa en infecciones cutáneas y del aparato digestivo.  </p>
+<h3 id="-receta-infusi-n-de-or-gano-para-la-tos-y-la-congesti-n-"><strong>☕ Receta: Infusión de Orégano para la Tos y la Congestión</strong></h3>
+<p>📌 <strong>Ideal para limpiar las vías respiratorias.</strong>  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 1 cucharadita de hojas secas de orégano<br>✅ 1 taza de agua caliente<br>✅ Miel y limón al gusto  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Hierve el agua y agrégale las hojas de orégano.  </li>
+<li>Deja reposar por 10 minutos y cuela.  </li>
+<li><strong>Bebe caliente para aliviar la tos y despejar la nariz.</strong>  </li>
+</ol>
+<p>💡 <strong>Combinación Especial:</strong> Mezcla <strong>orégano + eucalipto + jengibre</strong> para un remedio súper efectivo contra resfriados.  </p>
+<h3 id="-c-mo-cultivar-or-gano-en-casa-"><strong>🌱 Cómo Cultivar Orégano en Casa</strong></h3>
+<p>🔹 <strong>Tipo de suelo:</strong> Arenoso y bien drenado.<br>🔹 <strong>Luz solar:</strong> Pleno sol.<br>🔹 <strong>Riego:</strong> Moderado, evitando encharcar.  </p>
+<p>📌 <strong>Instrucciones:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li>Planta semillas o esquejes en una maceta.  </li>
+<li>Riégalo una vez por semana.  </li>
+<li><strong>Cosecha sus hojas cuando la planta tenga 3-4 meses.</strong>  </li>
+</ol>
+<h3 id="-contraindicaciones-del-or-gano-"><strong>⚠️ Contraindicaciones del Orégano</strong></h3>
+<p>❌ <strong>No consumir en exceso</strong>: Puede causar irritación gástrica.<br>❌ <strong>Evitar en embarazo y lactancia</strong>: Puede estimular contracciones uterinas.<br>❌ <strong>No usar en personas con alergias a plantas de la familia de la menta</strong>.  </p>
+
+<h1 id="combinaciones"><strong>📌 Combinaciones de Plantas para Remedios Naturales 🌿</strong></h1>
+<p>📌 <strong>🌙 Infusión para Dormir Mejor</strong><br>✅ <strong>Valeriana + lavanda + manzanilla</strong>  </p>
+<p>📌 <strong>💨 Remedio para la Tos y Resfriados</strong><br>✅ <strong>Eucalipto + orégano + jengibre</strong>  </p>
+<p>📌 <strong>🧠 Infusión para la Concentración</strong><br>✅ <strong>Romero + menta + jengibre</strong>  </p>
+<p>📌 <strong>💆 Baño Relajante</strong><br>✅ <strong>Lavanda + manzanilla + romero</strong>  </p>
+<p>📌 <strong>🛀 Gel para Quemaduras y Piel Irritada</strong><br>✅ <strong>Aloe vera + lavanda + aceite de coco</strong>  </p>
+<h1 id="-contraindicaciones-generales-de-las-plantas-medicinales-"><strong>⚠️ Contraindicaciones Generales de las Plantas Medicinales</strong></h1>
+<p>📌 <strong>No usar en exceso:</strong> Las dosis altas pueden causar efectos secundarios.<br>📌 <strong>Consultar con un médico si estás embarazada o en lactancia.</strong><br>📌 <strong>Si tomas medicamentos, verifica posibles interacciones.</strong><br>📌 <strong>Evitar en niños pequeños sin supervisión médica.</strong> </p>
+
+<h1 id="conservacion"><strong>📌 Capítulo Final: Cómo Secar y Conservar las Plantas Medicinales 🌱</strong></h1>
+<p>Las plantas medicinales son más efectivas cuando se almacenan correctamente, ya que <strong>mantienen sus principios activos</strong> por más tiempo. En este capítulo, aprenderás <strong>cómo secarlas, guardarlas y usarlas adecuadamente</strong> para que no pierdan su potencia con el tiempo.  </p>
+<hr>
+<h2 id="-m-todos-para-secar-plantas-medicinales-"><strong>🌞 Métodos para Secar Plantas Medicinales</strong></h2>
+<p>Existen varias formas de <strong>deshidratar</strong> hierbas y raíces para conservarlas por meses o incluso años. Aquí te explico las más efectivas:  </p>
+<h3 id="-1-secado-al-aire-m-todo-tradicional-"><strong>1️⃣ Secado al Aire (Método Tradicional) 🌬️</strong></h3>
+<p>📌 <strong>Ideal para:</strong> Lavanda, manzanilla, romero, menta, orégano y valeriana.  </p>
+<p>✅ <strong>Pasos:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li><strong>Lava bien las hierbas</strong> con agua limpia y sécalas con un paño.  </li>
+<li><strong>Agrupa las ramas</strong> en pequeños manojos y átalas con hilo o cuerda.  </li>
+<li><strong>Cuélgalas boca abajo</strong> en un lugar seco, oscuro y bien ventilado.  </li>
+<li>Déjalas secar durante <strong>1-2 semanas</strong>, hasta que las hojas se desmenucen fácilmente.  </li>
+<li><strong>Guárdalas en frascos de vidrio</strong> o bolsas herméticas.  </li>
+</ol>
+<p>💡 <strong>Consejo:</strong> Evita secarlas bajo el sol directo, ya que puede deteriorar sus propiedades.  </p>
+<hr>
+<h3 id="-2-secado-en-horno-o-deshidratador-"><strong>2️⃣ Secado en Horno o Deshidratador 🔥</strong></h3>
+<p>📌 <strong>Ideal para:</strong> Raíces y plantas con mucha humedad, como jengibre, cúrcuma y aloe vera.  </p>
+<p>✅ <strong>Pasos:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li><strong>Corta la planta en rodajas finas</strong> para acelerar el proceso.  </li>
+<li><strong>Colócalas en una bandeja</strong> de horno con papel vegetal.  </li>
+<li>Ajusta la temperatura a <strong>50-60°C</strong> y deja la puerta entreabierta.  </li>
+<li><strong>Hornea por 2-3 horas</strong>, revisando cada 30 minutos.  </li>
+<li><strong>Guárdalas en frascos o bolsas de papel.</strong>  </li>
+</ol>
+<p>💡 <strong>Consejo:</strong> Si usas un <strong>deshidratador de alimentos</strong>, ponlo a baja temperatura (35-45°C) y deja secar entre <strong>8 y 12 horas</strong>.  </p>
+<hr>
+<h3 id="-3-secado-al-sol-solo-para-ra-ces-y-semillas-"><strong>3️⃣ Secado al Sol ☀️ (Solo para Raíces y Semillas)</strong></h3>
+<p>📌 <strong>Ideal para:</strong> Semillas de orégano, raíces de valeriana y jengibre.  </p>
+<p>✅ <strong>Pasos:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li><strong>Lava y corta</strong> en trozos pequeños.  </li>
+<li><strong>Coloca las piezas en una bandeja</strong> y cúbrelas con una malla fina.  </li>
+<li>Déjalas al sol <strong>durante 3-4 días</strong>, moviéndolas ocasionalmente.  </li>
+<li><strong>Guárdalas en frascos herméticos.</strong>  </li>
+</ol>
+<p>💡 <strong>Consejo:</strong> No uses este método con hierbas frágiles, ya que el sol puede <strong>degradar sus aceites esenciales</strong>.  </p>
+<hr>
+<h2 id="-c-mo-almacenar-plantas-medicinales-"><strong>📦 Cómo Almacenar Plantas Medicinales</strong></h2>
+<p>Una vez secas, es fundamental <strong>conservar las hierbas correctamente</strong> para que no pierdan sus propiedades.  </p>
+<p>🔹 <strong>Frascos de vidrio:</strong> Lo mejor para mantenerlas frescas y sin humedad.<br>🔹 <strong>Bolsas de papel o tela:</strong> Permiten que las hierbas &quot;respiren&quot;.<br>🔹 <strong>Evita bolsas plásticas:</strong> Retienen humedad y pueden generar moho.<br>🔹 <strong>Lugar oscuro y fresco:</strong> Protege las plantas de la luz y el calor.  </p>
+<p>💡 <strong>Duración de conservación:</strong><br>✅ <strong>Hierbas secas</strong> (menta, lavanda, manzanilla, orégano, romero) → <strong>1 año</strong><br>✅ <strong>Raíces secas</strong> (jengibre, cúrcuma, valeriana) → <strong>2 años</strong><br>✅ <strong>Semillas y cortezas</strong> → <strong>Hasta 3 años</strong>  </p>
+<hr>
+<h2 id="-c-mo-hacer-extractos-y-tinturas-para-mayor-duraci-n-"><strong>🧪 Cómo Hacer Extractos y Tinturas para Mayor Duración</strong></h2>
+<p>Si quieres <strong>conservar las propiedades de las plantas durante años</strong>, puedes preparar <strong>extractos y tinturas</strong> con alcohol o glicerina.  </p>
+<h3 id="-tintura-de-plantas-medicinales-extracto-concentrado-"><strong>📌 Tintura de Plantas Medicinales (Extracto Concentrado) 🏺</strong></h3>
+<p>📌 <strong>Ideal para:</strong> Valeriana, lavanda, orégano y jengibre.  </p>
+<p>📝 <strong>Ingredientes:</strong><br>✅ 50 g de planta seca o 100 g de planta fresca<br>✅ 250 ml de alcohol (vodka o ron) o glicerina vegetal<br>✅ Un frasco de vidrio oscuro  </p>
+<p>👨‍🍳 <strong>Preparación:</strong>  </p>
+<ol style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+<li><strong>Tritura la planta seca</strong> en trozos pequeños.  </li>
+<li><strong>Colócala en el frasco</strong> y cubre con el alcohol o glicerina.  </li>
+<li><strong>Deja macerar durante 3-4 semanas</strong> en un lugar oscuro, agitándolo cada día.  </li>
+<li><strong>Cuela la mezcla</strong> y guárdala en un frasco con gotero.  </li>
+</ol>
+<p>💡 <strong>Dosis recomendada:</strong> 10-20 gotas diluidas en agua o infusión.  </p>
+<hr>
+<h2 id="-consejos-finales-para-usar-las-plantas-medicinales-con-seguridad-"><strong>🌱 Consejos Finales para Usar las Plantas Medicinales con Seguridad</strong></h2>
+<p>Antes de terminar, recuerda estas <strong>reglas de oro</strong> para aprovechar al máximo las hierbas sin riesgos:  </p>
+<p>✔️ <strong>Usa plantas de calidad:</strong> Procura que sean orgánicas y libres de pesticidas.<br>✔️ <strong>No uses dosis excesivas:</strong> Más cantidad <strong>no</strong> significa más beneficios.<br>✔️ <strong>Consulta a un médico si tomas medicamentos:</strong> Algunas hierbas pueden <strong>interactuar con fármacos</strong>.<br>✔️ <strong>Realiza pruebas alérgicas:</strong> Aplica un poco en la piel antes de usar una planta por primera vez.<br>✔️ <strong>Evita el uso en embarazo y lactancia</strong> sin asesoramiento profesional.  </p>
+<hr>
+<h1 id="-felicidades-ahora-eres-un-experto-en-plantas-medicinales-"><strong>🎉 ¡Felicidades! Ahora eres un experto en Plantas Medicinales 🌿</strong></h1>
+<p>Has llegado al final de esta <strong>guía completa sobre el poder oculto de las plantas medicinales</strong>. Ahora sabes <strong>cómo usarlas, cultivarlas, prepararlas y conservarlas</strong> para aprovechar todos sus beneficios de forma segura.  </p>
+<p>💚 <strong>La naturaleza nos brinda todo lo que necesitamos para sanar. ¡Aprovéchalo y cuida tu bienestar!</strong>  </p>
+<h1 id="faq"><strong>📌 Preguntas Frecuentes sobre Plantas Medicinales</strong></h1>
+<p>Aquí responderé algunas de las dudas más comunes que pueden surgir al empezar a usar <strong>remedios naturales</strong> con plantas medicinales.  </p>
+<h3 id="-1-cu-nto-tiempo-debo-tomar-una-infusi-n-para-notar-sus-efectos-"><strong>1️⃣ ¿Cuánto tiempo debo tomar una infusión para notar sus efectos?</strong></h3>
+<p>Depende de la planta y del problema a tratar. Algunas, como la valeriana para dormir, <strong>hacen efecto en la primera toma</strong>, mientras que otras, como la cúrcuma para la inflamación, <strong>requieren consumo regular (al menos 2 semanas) para notar mejoras</strong>.  </p>
+<h3 id="-2-puedo-combinar-varias-hierbas-en-una-sola-infusi-n-"><strong>2️⃣ ¿Puedo combinar varias hierbas en una sola infusión?</strong></h3>
+<p>Sí, pero con cuidado. Algunas combinaciones son seguras y potencian sus efectos (como valeriana + lavanda + manzanilla para dormir), pero otras pueden ser demasiado fuertes juntas. Es importante <strong>investigar antes de mezclar</strong>.  </p>
+<h3 id="-3-las-plantas-medicinales-tienen-efectos-secundarios-"><strong>3️⃣ ¿Las plantas medicinales tienen efectos secundarios?</strong></h3>
+<p>Sí, aunque son naturales, algunas pueden tener <strong>contraindicaciones o interacciones con medicamentos</strong>. Por ejemplo, el jengibre <strong>puede aumentar el riesgo de sangrado si se toma con anticoagulantes</strong>. Siempre es recomendable <strong>consultar con un profesional de la salud</strong> si tomas medicación.  </p>
+<h3 id="-4-puedo-tomar-infusiones-de-hierbas-si-estoy-embarazada-o-lactando-"><strong>4️⃣ ¿Puedo tomar infusiones de hierbas si estoy embarazada o lactando?</strong></h3>
+<p>Algunas hierbas son seguras, pero otras pueden ser peligrosas. <strong>La valeriana, el orégano y el romero en dosis altas pueden estimular contracciones uterinas</strong>. Si estás embarazada o en periodo de lactancia, <strong>consulta con un médico antes de consumir cualquier planta medicinal</strong>.  </p>
+<h3 id="-5-c-mo-saber-si-una-planta-est-en-buen-estado-para-su-consumo-"><strong>5️⃣ ¿Cómo saber si una planta está en buen estado para su consumo?</strong></h3>
+<p>Debe <strong>tener buen aroma, color vibrante y estar libre de moho o humedad</strong>. Si una planta huele mal, tiene manchas extrañas o se ha vuelto demasiado oscura, es mejor <strong>descartarla</strong>.
+
+<!-- ========= INICIO DEL DESCARGO DE RESPONSABILIDAD ========= -->
+<div class="disclaimer-box">
+    <h3>🌱 No olvides que...</h3>
+    <p>La información contenida en este ebook tiene fines meramente educativos y no pretende sustituir el consejo, diagnóstico o tratamiento de un profesional médico cualificado. Consulta siempre a tu médico o a otro proveedor de salud cualificado ante cualquier duda que puedas tener sobre una condición médica.</p>
+</div>
+<!-- ========= FIN DEL DESCARGO DE RESPONSABILIDAD ========= -->
+
+  <p><em>Creado con amor, conocimiento y esperanza por <strong>J.P. Comas</strong>.</em></p>
+<!-- ✅ Contraportada -->
+<img src="https://i.postimg.cc/9XY8jn94/Contraportada-Reducida-1600px-1.png" alt="Gracias por leer">
+  </div>  
+
+<script>
+// --- INICIO SCRIPT PARA GENERADOR DE RECETAS CON IA ---
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Lista de plantas del ebook
+    const plants = [
+        "Manzanilla", "Menta", "Jengibre", "Cúrcuma", "Lavanda",
+        "Eucalipto", "Romero", "Aloe Vera", "Valeriana", "Orégano"
+    ];
+
+    const checkboxesContainer = document.getElementById('plants-checkboxes');
+
+    // Generar los checkboxes para cada planta
+    plants.forEach(plant => {
+        const item = document.createElement('div');
+        item.className = 'checkbox-item';
+        
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `plant-${plant.toLowerCase().replace(' ', '-')}`;
+        checkbox.value = plant;
+        checkbox.name = 'plant';
+
+        const label = document.createElement('label');
+        label.htmlFor = checkbox.id;
+        label.textContent = plant;
+        
+        item.appendChild(checkbox);
+        item.appendChild(label);
+        checkboxesContainer.appendChild(item);
+    });
+
+    const generateBtn = document.getElementById('generate-remedy-btn');
+    const symptomInput = document.getElementById('symptom-input');
+    const resultDiv = document.getElementById('gemini-result');
+    const loader = document.getElementById('loader');
+
+    // Evento al hacer clic en el botón de generar
+    generateBtn.addEventListener('click', async () => {
+        const symptom = symptomInput.value.trim();
+        const selectedPlants = Array.from(document.querySelectorAll('input[name="plant"]:checked'))
+                                    .map(cb => cb.value);
+
+        // Validaciones
+        if (!symptom) {
+            resultDiv.innerHTML = 'Por favor, describe tu síntoma o malestar.';
+            return;
+        }
+        if (selectedPlants.length === 0) {
+            resultDiv.innerHTML = 'Por favor, selecciona al menos una planta.';
+            return;
+        }
+
+        // Mostrar loader y limpiar resultado anterior
+        loader.style.display = 'block';
+        resultDiv.innerHTML = '';
+
+        // Construir el prompt para la API de Gemini
+        const prompt = `
+            Actúa como un herbolario experto y autor del libro "El Poder Oculto de las Plantas Medicinales". 
+            Tu tarea es crear un remedio casero personalizado para un usuario.
+
+            El objetivo del usuario es aliviar: "${symptom}".
+            Las plantas que tiene disponibles son: ${selectedPlants.join(', ')}.
+
+            Por favor, crea una receta clara y segura. La respuesta debe incluir los siguientes puntos, bien separados:
+            1.  **Nombre del Remedio:** Un nombre creativo y descriptivo.
+            2.  **Ingredientes:** Una lista clara con cantidades.
+            3.  **Preparación:** Instrucciones paso a paso, fáciles de seguir.
+            4.  **Modo de Uso:** Cómo y cuándo tomar o aplicar el remedio.
+            5.  **Precauciones:** Advertencias importantes sobre el uso de estas plantas, especialmente si hay alguna contraindicación relevante de las mencionadas en el libro.
+
+            Utiliza un tono amigable, sabio y tranquilizador. Asegúrate de que la receta sea coherente con las propiedades de las plantas seleccionadas.
+        `;
+
+        try {
+            // --- Llamada a la API de Gemini ---
+            let chatHistory = [];
+            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+            const payload = { contents: chatHistory };
+            const apiKey = ""; // La clave será gestionada por el entorno de ejecución
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+            
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            if (!response.ok) {
+                throw new Error(`Error en la API: ${response.statusText}`);
+            }
+
+            const result = await response.json();
+            
+            if (result.candidates && result.candidates.length > 0 &&
+                result.candidates[0].content && result.candidates[0].content.parts &&
+                result.candidates[0].content.parts.length > 0) {
+                
+                const text = result.candidates[0].content.parts[0].text;
+                // Mostrar el resultado formateado
+                resultDiv.innerHTML = text;
+            } else {
+                // Manejar respuesta inesperada
+                resultDiv.innerHTML = 'No se pudo generar una receta. La respuesta de la IA no tuvo el formato esperado. Por favor, intenta de nuevo.';
+            }
+
+        } catch (error) {
+            console.error('Error al llamar a la API de Gemini:', error);
+            resultDiv.innerHTML = 'Hubo un error al conectar con el servicio de IA. Por favor, inténtalo más tarde.';
+        } finally {
+            // Ocultar el loader
+            loader.style.display = 'none';
+        }
+    });
+});
+// --- FIN SCRIPT ---
+</script>
+</body>
+</html>
